@@ -7,15 +7,7 @@ export default function App() {
   const [text, setText] = useState("");
   return (
     <View style={styles.container}>
-      <View style={styles.textInput_Wrapper}>
-        <TextInput
-          value={text}
-          onChangeText={(text) => setText(text)}
-          style={styles.TextInput}
-          mode="outlined"
-          placeholder={'Enter your username'}
-        />
-      </View>
+      <TextInput value={text} onChangeText={(text) => setText(text)} />
     </View>
   );
 }
@@ -23,13 +15,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    margin: 5,
-    padding: 10,
-  },
-
-  textInput_Wrapper: {
+    backgroundColor: "#fff",
+    alignItems: "center",
     justifyContent: "center",
-    marginTop : 200
   },
-  TextInput: {},
 });

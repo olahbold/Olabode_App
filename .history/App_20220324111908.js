@@ -13,7 +13,7 @@ export default function App() {
           onChangeText={(text) => setText(text)}
           style={styles.TextInput}
           mode="outlined"
-          placeholder={'Enter your username'}
+          placeholder={}
         />
       </View>
     </View>

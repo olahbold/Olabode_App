@@ -13,7 +13,6 @@ export default function App() {
           onChangeText={(text) => setText(text)}
           style={styles.TextInput}
           mode="outlined"
-          placeholder={'Enter your username'}
         />
       </View>
     </View>
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
 
   textInput_Wrapper: {
     justifyContent: "center",
-    marginTop : 200
+    marginTop : 100
   },
   TextInput: {},
 });
