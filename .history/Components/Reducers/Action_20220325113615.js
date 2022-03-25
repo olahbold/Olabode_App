@@ -14,7 +14,7 @@ import { GET_REPO } from "./Actiontypes";
       if (json) {
         dispatch({
           type: GET_REPO,
-          payload: console.log(json),
+          payload: console.log(json,
         });
       } else {
         console.log("Unable to get Info");

@@ -1,20 +1,20 @@
 import { GET_REPO } from "./Actiontypes";
 
- const getMoviesFromApiAsync = ({route}) => {
+ const getMoviesFromApiAsync = ({ro}) => {
   try {
     return async (dispatch) => {
-      const response = await fetch(`https://api.github.com/repos/${route.params.text}/`, {
+      const response = await fetch(`https://api.github.com/repos/${text}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
-        
+        body:JSON.stringify
       });
       const json = await response.json();
       if (json) {
         dispatch({
           type: GET_REPO,
-          payload: console.log(json),
+          payload: json,
         });
       } else {
         console.log("Unable to get Info");

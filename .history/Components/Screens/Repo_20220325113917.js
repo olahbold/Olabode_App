@@ -10,7 +10,7 @@ const RepoScreen = (props) => {
 
   useEffect(() => {
     dispatch(() => {
-      getMoviesFromApiAsync();
+      getMoviesFromApiAsync(rou);
     });
   }, []);
   return (

@@ -16,8 +16,8 @@ export default function App() {
     <Provider store={Store}>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Input">
-          <Stack.Screen name="Input" component={InputScreen} options={{headerTitle : 'Home'}} />
-          <Stack.Screen name="repo" component={RepoScreen}  options={({ route }) => ({ title: route.params.text })} />
+          <Stack.Screen name="Input" component={InputScreen} />
+          <Stack.Screen name="repo" component={RepoScreen}  options={ = ()=>null}/>
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

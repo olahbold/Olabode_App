@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
+import { Button } from "react-native-paper";
 import getMoviesFromApiAsync from "../Reducers/Action";
 
 const RepoScreen = (props) => {

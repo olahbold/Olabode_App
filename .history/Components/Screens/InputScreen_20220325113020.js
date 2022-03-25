@@ -8,7 +8,7 @@ const InputScreen = ({ navigation }) => {
   const onChangeSearch = (query) => setText(query);
   const EnterDetailsHandler = () => {
     navigation.navigate("repo", {
-       text,
+      text: text,
     });
   };
   return (

@@ -6,11 +6,12 @@ const InputScreen = ({ navigation }) => {
   const [text, setText] = useState("");
 
   const onChangeSearch = (query) => setText(query);
-  const EnterDetailsHandler = () => {
-    navigation.navigate("repo", {
-       text,
-    });
-  };
+  const EnterDetailsHandler = ()=> {
+      
+    navigation.navigate("repo",{
+        text:text
+    })
+  }
   return (
     <View style={styles.container}>
       <View style={styles.textInput_Wrapper}>
